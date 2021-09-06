@@ -1,0 +1,11 @@
+body {
+    margin: 0px;
+    padding: 0px;
+}
+main {
+    position: relative;
+    background-image: url("../src/pexels-volkan-vardar-3887985.jpg");
+    background-repeat: repeat-x round;
+    top: -20vh;
+    height: 120vh;
+}
