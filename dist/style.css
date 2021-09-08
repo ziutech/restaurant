@@ -1,11 +1,60 @@
+:root {
+    --default: hsla(190, 7%, 7%, 0.8);
+}
 body {
+    font-family: "Urbanist", sans-serif;
+    color: whitesmoke;
     margin: 0px;
     padding: 0px;
+    overflow-x: hidden;
 }
+
+button {
+    appearance: none;
+    border: none;
+    background: none;
+    color: whitesmoke;
+}
+
+nav {
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    width: 100vw;
+    height: 10vh;
+    /* background-color: rgba(0, 0, 0, 0.5); */
+    background-color: var(--default);
+}
+
+nav h3 {
+    margin: 20px;
+    font-weight: 200;
+    font-size: 50px;
+}
+nav ul {
+    list-style: none;
+    width: 40%;
+    margin: 30px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.pageChange {
+    font-size: 30px;
+}
+.pageChange:hover {
+    text-decoration: underline 2px;
+}
+
 main {
+    width: 100vw;
     position: relative;
     background-image: url("../src/pexels-volkan-vardar-3887985.jpg");
-    background-repeat: repeat-x round;
+    background-position: center;
+    background-size: cover;
     top: -20vh;
     height: 120vh;
 }
