@@ -1,60 +1,104 @@
 :root {
-    --default: hsla(190, 7%, 7%, 0.8);
+  --default: hsla(190, 7%, 7%, 0.8);
+  --grape: #835b7f; /* #94618e;*/
+  --grape-darker: #764e72;
+  --eggplant: #49274a;
+  --sand: #f4decb;
+  --shell: #f8eee7;
 }
+
 body {
-    font-family: "Urbanist", sans-serif;
-    color: whitesmoke;
-    margin: 0px;
-    padding: 0px;
-    overflow-x: hidden;
+  font-family: "Urbanist", sans-serif;
+  color: var(--sand);
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+  overflow-y: hidden;
 }
 
 button {
-    appearance: none;
-    border: none;
-    background: none;
-    color: whitesmoke;
+  appearance: none;
+  border: none;
+  background: none;
+  color: whitesmoke;
 }
 
-nav {
-    position: fixed;
-    display: flex;
-    justify-content: space-between;
-    top: 0px;
-    left: 0px;
-    right: 0px;
-    width: 100vw;
-    height: 10vh;
-    /* background-color: rgba(0, 0, 0, 0.5); */
-    background-color: var(--default);
+header {
+  display: flex;
+  justify-content: space-between;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  width: 100%;
+  height: 20vh;
+  background-color: var(--grape-darker);
+  flex-flow: row wrap;
 }
 
-nav h3 {
-    margin: 20px;
-    font-weight: 200;
-    font-size: 50px;
+header h3 {
+  margin: 20px;
+  margin-bottom: 10px;
+  font-weight: 400;
+  font-size: 50px;
 }
-nav ul {
-    list-style: none;
-    width: 40%;
-    margin: 30px;
-    display: flex;
-    justify-content: space-evenly;
+
+header ul {
+  list-style: none;
+  width: 400px;
+  margin: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+
+header #coffee-icons {
+  position: relative;
+  top: -15px;
+  flex-basis: auto;
+  width: 100%;
+  height: 10vh;
+  background-image: url("../coffee.svg");
+  background-repeat: repeat-x;
+  background-size: 70px 100px;
 }
 
 .pageChange {
-    font-size: 30px;
+  font-size: 30px;
 }
 .pageChange:hover {
-    text-decoration: underline 2px;
+  text-decoration: underline 2px;
 }
 
 main {
-    width: 100vw;
-    position: relative;
-    background-image: url("../src/pexels-volkan-vardar-3887985.jpg");
-    background-position: center;
-    background-size: cover;
-    top: -20vh;
-    height: 120vh;
+  height: 68vh;
+  background-color: var(--sand);
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+section {
+  padding: 20px;
+  border: 13px solid var(--grape-darker);
+  /* box-shadow: 0px 0px 0 10px var(--eggplant); */
+  border-radius: 0px 0px 20px 20px;
+  background-color: var(--grape);
+}
+
+section .content {
+  padding: 10px;
+  /* margin: 0px; */
+  /* border-radius: 0px 10px 10px 10px; */
+  /* border: 20px solid var(--grape); */
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  height: 10vh;
+  width: 100vw;
+  background-color: var(--grape-darker);
 }
