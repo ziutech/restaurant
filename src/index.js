@@ -6,7 +6,7 @@ function clear() {
     main.removeChild(main.firstChild);
   }
 }
-
+//
 document.getElementById("home").addEventListener("click", () => {
   clear();
   home();
