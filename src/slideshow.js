@@ -1,7 +1,7 @@
-import img1 from "./pexels-burak-kebapci-735869.jpg";
-import img2 from "./pexels-elevate-1267320.jpg";
-import img3 from "./pexels-victoria-borodinova-3745525.jpg";
-import img4 from "./pexels-vincent-rivaud-2555240.jpg";
+import img1 from "./assets/pexels-burak-kebapci-735869.jpg";
+import img2 from "./assets/pexels-elevate-1267320.jpg";
+import img3 from "./assets/pexels-victoria-borodinova-3745525.jpg";
+import img4 from "./assets/pexels-vincent-rivaud-2555240.jpg";
 
 const images = [img1, img2, img3, img4];
 let current = 0;

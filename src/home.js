@@ -1,6 +1,6 @@
 import slideshow from "./slideshow";
-import Hours from "./opening-hours.png";
-import Smile from "./external-content.duckduckgo.com.png";
+import Hours from "./assets/opening-hours.png";
+import Smile from "./assets/external-content.duckduckgo.com.png";
 import "./style.css";
 
 const home = () => {
