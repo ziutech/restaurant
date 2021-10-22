@@ -19,6 +19,9 @@
   },
   "homepage": "https://github.com/KrzysztofZduniak/restaurant#readme",
   "devDependencies": {
+    "css-loader": "^6.4.0",
+    "style-loader": "^3.3.1",
+    "url-loader": "^4.1.1",
     "webpack": "^5.52.0",
     "webpack-cli": "^4.8.0",
     "webpack-dev-server": "^4.3.1"

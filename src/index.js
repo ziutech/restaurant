@@ -1,4 +1,4 @@
-import { home } from "./home.js";
+import { home } from "./home";
 
 function clear() {
   const main = document.querySelector("main");
@@ -6,8 +6,9 @@ function clear() {
     main.removeChild(main.firstChild);
   }
 }
-//
+
 document.getElementById("home").addEventListener("click", () => {
   clear();
   home();
 });
+home();
