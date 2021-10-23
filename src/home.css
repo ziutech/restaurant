@@ -1,0 +1,14 @@
+.main-size-3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.content {
+  height: 58vh;
+  padding: 20px;
+}
+
+.media {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-between; */
+}

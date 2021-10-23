@@ -1,4 +1,6 @@
+import "./style.css";
 import { home } from "./home";
+import { menu } from "./menu";
 
 function clear() {
   const main = document.querySelector("main");
@@ -12,3 +14,8 @@ document.getElementById("home").addEventListener("click", () => {
   home();
 });
 home();
+
+document.getElementById("menu").addEventListener("click", () => {
+  clear();
+  menu();
+});
